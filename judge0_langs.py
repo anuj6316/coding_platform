@@ -1,5 +1,5 @@
 import requests
-
+import json
 # Base URL for the Judge0 API
 # You can change this to the CE / Extra CE endpoint you are using
 BASE_URL = "https://ce.judge0.com"  # or "https://api.judge0.com" if using the official API host
@@ -19,6 +19,8 @@ def list_languages():
         return
 
     print("Supported Judge0 Languages:")
+    with open("supported_languages.json", "w") as f:
+        json.dump(languages, f, indent=4)
     for lang in languages:
         lang_id = lang.get("id")
         lang_name = lang.get("name")

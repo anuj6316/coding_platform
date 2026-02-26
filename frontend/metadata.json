@@ -1,0 +1,5 @@
+{
+  "name": "Stride Code",
+  "description": "A dark-themed coding interview platform clone featuring a code editor, problem description, test cases, and AI-powered code execution using Gemini.",
+  "requestFramePermissions": []
+}
